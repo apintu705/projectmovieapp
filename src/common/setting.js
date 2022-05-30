@@ -1,15 +1,13 @@
-import "./styles.css"
-import Footer from "./components/footer/footer";
-import Header from "./components/header/header";
+import "./styles.css";
 import React from "react";
-import { Routes,Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/home/home";
-
+import Header from "./components/header/header";
 import Moviedetails from "./components/moviedetails/moviedetails";
 import Pagenotfound from "./components/pagenotfound/pagenotfound";
+import Footer from "./components/footer/footer";
 
-
-const  App=()=>{
+export default function App() {
   return (
     <div className="App">
       <Header />
@@ -23,7 +21,6 @@ const  App=()=>{
 
       <Footer />
     </div>
-  )
-
+  );
 }
-export default App;
+
